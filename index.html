@@ -23,14 +23,17 @@
       var arrImages = [
         '<img id="full-center" src="https://cloclo13.cloud.mail.ru/weblink/thumb/xw1/2b6857f466ae/%D0%B1%D1%80%D1%8E%D0%BA%D0%B82.jpg">',
         '<img src="https://cloclo2.cloud.mail.ru/weblink/thumb/xw1/07b64224b264/%D0%B1%D1%80%D1%8E%D0%BA%D0%B8.jpg">',
-        '<img id="full-center" src="https://cloclo3.cloud.mail.ru/weblink/thumb/xw1/1dedd3348c7a/teaberry.jpg?x-email=ktotamby%40mail.ru">']
+        '<img id="full-center" src="https://cloclo3.cloud.mail.ru/weblink/thumb/xw1/1dedd3348c7a/teaberry.jpg?x-email=ktotamby%40mail.ru">'
+      ]
         
       function getRandomInt(min, max){
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
 
-      
-       wrapper.innerHTML = arrImages[getRandomInt(0, arrImages.length - 1)]
+      alert("длинна массива="+(arrImages.length - 1));
+      alert("1 wrapper.innerHTML ="+wrapper.innerHTML);
+       wrapper.innerHTML = arrImages[getRandomInt(0, (arrImages.length - 1))];
+      alert("2 wrapper.innerHTML ="+wrapper.innerHTML); 
 <!--
       if (Math.round(Math.random())){
         wrapper.innerHTML = '<img id="full-center" src="https://cloclo13.cloud.mail.ru/weblink/thumb/xw1/2b6857f466ae/%D0%B1%D1%80%D1%8E%D0%BA%D0%B82.jpg">'
